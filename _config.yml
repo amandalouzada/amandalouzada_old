@@ -20,6 +20,10 @@ url: "http://example.com" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
 
+collections:
+  portifolio:
+    output: true
+
 sass:
   sass_dir: _sass
   style: compressed

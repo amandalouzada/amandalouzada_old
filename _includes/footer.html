@@ -1,23 +1,26 @@
-<footer class="page-footer grey darken-3">
+<footer class="page-footer grey darken-3" id="contato">
     <div class="wrapper">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
-          <h5 class="footer-heading">{{ site.title | escape }}</h5>
+          <h5 class="footer-heading light grey-text text-lighten-4">Contatos</h5>
+          <ul>
+            <li><p class="light grey-text text-lighten-4">{{ site.title | escape }} - (63) 98117-0542</p></li>
+            <li><a class="light grey-text text-lighten-4" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+          </ul>
         </div>
         <div class="col l4 offset-l2 s12">
-          <h5 class="white-text">Contatos</h5>
+          <h5 class="white-text">Lings Úteis</h5>
           <ul>
-            <li>{{ site.title | escape }}</li>
-            <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+            <li><a class="light grey-text text-lighten-4" href="http://www.lnlago.com/"><img width="80" src="{{"/assets/img/lnlago.png"}}"/></a></li>
+            <li><a class="light grey-text text-lighten-4" href="http://www.xodozinho.com/"><img width="80" src="{{"/assets/img/xodozinho.png"}}"/></a></li>
           </ul>
         </div>
       </div>
     </div>
-    <div class="footer-copyright">
+    <div class="footer-copyright grey darken-4">
       <div class="container">
-        © 2014 Copyright Text Amanda Louzada
-        <p class="grey-text text-lighten-4">{{ site.description | escape }}</p>
+        © 2016 Copyright, Desenvolvido por Amanda Louzada
       </div>
     </div>
   </div>

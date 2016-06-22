@@ -1,23 +1,43 @@
 ---
 layout: default
 ---
+  <div class="container">
+    <div id="portifolio">
+      <div class="row">
+        <h4 class="red-text text-lighten-3 left">Portifólio</h4><b>
+      </div>
+      <div class="row">
+        {% for portifolio in site.portifolio %}
+        <div class="col s12 m4">
+          <div class="card z-depth-3">
+            <div class="card-image ">
+              <img class="responsive-image" src="{{ portifolio.thumbnail-path }}" alt="{{ portifolio.title }}"/>
+            </div>
+            <div class="card-title">
+              <a href="{{ portifolio.page-url }}"><h5 class="red-text text-lighten-3 center">{{ portifolio.title }}</h5></a>
+            </div>
 
-<div class="home">
+            <div class="card-content">
+              <p>{{ portifolio.short-description }}</p>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="row" id="blog">
+        <h1 class="page-heading"></h1>
 
-  <h1 class="page-heading">Posts</h1>
+        <ul class="post-list">
+          {% for post in site.posts %}
+            <li>
+              <span class="post-meta">{{ post.date | date: "%-d %b, %Y" }}</span>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+              <h2>
+                <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
+              </h2>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+  </div>

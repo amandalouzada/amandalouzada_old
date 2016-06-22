@@ -340,6 +340,7 @@ $shades: (
 $colors: (
   "materialize-red": $materialize-red,
   "red": $red,
+  "light-red": $light-red,
   "pink": $pink,
   "purple": $purple,
   "deep-purple": $deep-purple,
@@ -409,4 +410,3 @@ $colors: (
   @warn "Unknown `#{name}` in $colors.";
   @return null;
 }
-
