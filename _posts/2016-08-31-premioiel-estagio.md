@@ -3,8 +3,8 @@ layout: post
 title:  "Prêmio Iel de Estágio"
 date:   2016-08-31 01:23:14 -0300
 description: 'Prêmio IEL de Estágio é uma iniciativa que valoriza o estagiário, professores e profissionais supervisores.'
-thumbnail: /img/premioiel_thumb.jpg
-img_post: /img/premioiel_img.jpg
+thumbnail: '/img/premioiel_thumb.jpg'
+img_post: '/img/premioiel_img.jpg'
 categories: inicial
 ---
 
