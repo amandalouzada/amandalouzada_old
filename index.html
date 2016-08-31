@@ -32,10 +32,11 @@ layout: default
           {% for post in site.posts %}
             <li>
               <span class="post-meta">{{ post.date | date: "%-d %b, %Y" }}</span>
-
-              <h2>
-                <a class="post-link red-text text-lighten-3" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
-              </h2>
+              <h5 class="red-text text-lighten-3 center">{{ post.title | escape }}</h5>
+              <p>
+                {{ page.description }}
+              </p>
+                <a class="waves-effect waves-light btn red-lighten-3" href="{{ post.url | prepend: site.baseurl }}">Leia mais...</a>
             </li>
           {% endfor %}
         </ul>
