@@ -24,16 +24,18 @@ layout: default
         </div>
         {% endfor %}
       </div>
-    </div>
-    <div class="row" id="blog">
-        <h1 class="page-heading"></h1>
 
+      <div id="blog">
+        <div class="row">
+          <h4 class="red-text text-lighten-3 left">Blog</h4><b>
+        </div>
+      <div class="row" >
         <ul class="post-list">
           {% for post in site.posts %}
             <li>
-              <div class="card-image">
-                <img src="{{ post.thumbnail }}">
-              </div>
+                <div class="card-image">
+                  <img src="{{ post.thumbnail }}">
+                </div>
               <span class="post-meta">{{ post.date | date: "%-d %b, %Y" }}</span>
               <h5 class="red-text text-lighten-3">{{ post.title | escape }}</h5>
               <p>
@@ -44,4 +46,5 @@ layout: default
           {% endfor %}
         </ul>
       </div>
+    </div>
   </div>

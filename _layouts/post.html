@@ -1,20 +1,30 @@
 ---
-layout: default
+layout: blog
 ---
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
-    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
-  </header>
   <div class="container">
 
-    <div class="card-image">
-      <img src="{{ post.img_post }}">
+    <header class="post-header">
+      <h3 class="post-title  red-text text-lighten-3" itemprop="name headline">{{ page.title | escape }}</h3>
+      <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
+    </header>
+
+    <div class="row">
+      <div class="col s12 m7">
+        <div class="card">
+          <div class="card-image">
+            <div class="card-image">
+              <img src="{{ page.imagem }}">
+            </div>
+            <span class="card-title">Premiação do Prêmio IEL de estágio etapa estadual</span>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="post-content" itemprop="articleBody">
       {{ content }}
     </div>
-  </div>  
+  </div>
 
 </article>
