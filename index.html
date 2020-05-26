@@ -2,28 +2,7 @@
 layout: default
 ---
   <div class="container">
-    <div id="portifolio">
-      <div class="row">
-        <h4 class="red-text text-lighten-3 left">Portifólio</h4><b>
-      </div>
-      <div class="row">
-        {% for portifolio in site.portifolio %}
-        <div class="col s12 m4">
-          <div class="card z-depth-3">
-            <div class="card-image ">
-              <img class="responsive-image" src="{{ portifolio.thumbnail-path }}" alt="{{ portifolio.title }}"/>
-            </div>
-            <div class="card-title">
-              <a href="{{ portifolio.page-url }}"><h5 class="red-text text-lighten-3 center">{{ portifolio.title }}</h5></a>
-            </div>
 
-            <div class="card-content">
-              <p>{{ portifolio.short-description }}</p>
-            </div>
-          </div>
-        </div>
-        {% endfor %}
-      </div>
 
       <div id="blog">
         <div class="row">
